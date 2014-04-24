@@ -14,8 +14,35 @@ module.exports = function(grunt) {
     },
 
     jshint: {
-      jshintrc: true,
-      all: ['Gruntfile.js', 'js/lib/*.js', 'js/app.js']
+      all: {
+        src: ['Gruntfile.js', 'js/src/*'],
+        options: {
+          bitwise: true,
+          curly: true,
+          eqeqeq: true,
+          forin: true,
+          freeze: true,
+          immed: true,
+          latedef: true,
+          newcap: true,
+          noarg: true,
+          nonbsp: true,
+          plusplus: true,
+          quotmark: 'single',
+          undef: true,
+          unused: true,
+          strict: true,
+          trailing: true,
+          validthis: true,
+          indent: 2,
+          globals: {
+            console: true,
+            window: true,
+            jQuery: true,
+            module: true
+          }
+        }
+      }
     },
 
     uglify: {
@@ -32,6 +59,23 @@ module.exports = function(grunt) {
       tasks: ['less:production', 'uglify:default'],
       options: {
         livereload: true
+      },
+      js: {
+        files: ['js/src/*', 'js/lib/*'],
+        tasks: ['jshint:all', 'uglify:dist']
+      },
+      less: {
+        files: ['css/less/*'],
+        tasks: ['less:production']
+      },
+      static: {
+        files: ['index.html']
+      },
+      config: {
+        files: ['Gruntfile.js', 'package.json'],
+        options: {
+          reload: true
+        }
       }
     },
 
