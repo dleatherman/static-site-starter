@@ -1,0 +1,25 @@
+jshint: {
+  options: {
+    bitwise: true,
+    curly: true,
+    eqeqeq: true,
+    forin: true,
+    freeze: true,
+    immed: true,
+    latedef: true,
+    newcap: true,
+    noarg: true,
+    nonbsp: true,
+    plusplus: true,
+    quotmark: 'single',
+    undef: true,
+    unused: true,
+    strict: true,
+    trailing: true,
+    validthis: true,
+    globals: {
+    console: true,
+    window: true,
+    indent: 2
+  }
+}
