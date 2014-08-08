@@ -13,15 +13,26 @@ module.exports = function(grunt) {
       }
     },
 
-    styleguide: {
+    kss: {
       options: {
-        framework: {
-          name: 'kss'
-        }
+        includeType: 'less',
+        includePath: 'css/less/style.less',
+        template: 'bootstrap-antlers'
       },
+      dist: {
+          files: {
+            'styleguide': ['demo']
+          }
+      }
+    },
+
+    imagemin: {
       all: {
         files: [{
-          'styleguide' : 'css/less/*.less'
+          expand: true,
+          cwd: 'img/src',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'img/dist/'
         }]
       }
     },
@@ -81,6 +92,10 @@ module.exports = function(grunt) {
         files: ['css/less/*'],
         tasks: ['less:production']
       },
+      imagemin: {
+        files: ['img/src/*'],
+        tasks: ['newer:imagemin:all']
+      },
       static: {
         files: ['index.html']
       },
@@ -105,13 +120,15 @@ module.exports = function(grunt) {
 
   });
 
-  grunt.loadNpmTasks('grunt-styleguide');
+  grunt.loadNpmTasks('grunt-kss');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-connect');
+  grunt.loadNpmTasks('grunt-newer');
+  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
-  grunt.registerTask('default', ['connect', 'watch']);
+  grunt.registerTask('default', ['connect', 'newer:imagemin:all', 'watch']);
   
 }
