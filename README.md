@@ -16,6 +16,6 @@ This will install all of the node.js dependencies.
 
 ## Grunt Commands
 
-`grunt watch` will watch for changes in your code and then compile it if there has been a change.
-
-`grunt connect` will start a webserver at port 3000
+- `grunt watch` will watch for changes in your code and then compile it if there has been a change.
+- `grunt connect` will start a webserver at port 3000
+- `grunt kss` generates a bootstrap kss styleguide in the folder `/styleguide/`
