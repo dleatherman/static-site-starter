@@ -17,12 +17,12 @@ module.exports = function(grunt) {
       options: {
         includeType: 'less',
         includePath: 'css/less/style.less',
-        template: 'bootstrap-antlers'
+        template: 'bootstrap-antlers/bootstrap-antlers'
       },
       dist: {
-          files: {
-            'styleguide': ['styleguide']
-          }
+        files: {
+          'styleguide': ['demo']
+        }
       }
     },
 

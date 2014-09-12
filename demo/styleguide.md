@@ -647,7 +647,7 @@
 <div class="row">
 <div class="col-lg-4">
 <div class="thumbnail">
-<img alt="300x200" src="http://placekitten.com/300/200" style="width: 300px; height: 200px;">
+<img src="http://placehold.it/300x200">
 <div class="caption">
 <h3>Thumbnail label</h3>
 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -657,7 +657,7 @@
 </div>
 <div class="col-lg-4">
 <div class="thumbnail">
-<img alt="300x200" src="http://placekitten.com/300/200" style="width: 300px; height: 200px;">
+<img src="http://placehold.it/300x200">
 <div class="caption">
 <h3>Thumbnail label</h3>
 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -667,7 +667,7 @@
 </div>
 <div class="col-lg-4">
 <div class="thumbnail">
-<img alt="300x200" src="http://placekitten.com/300/200" style="width: 300px; height: 200px;">
+<img src="http://placehold.it/300x200">
 <div class="caption">
 <h3>Thumbnail label</h3>
 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -792,21 +792,21 @@ Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richa
 </ol>
 <div class="carousel-inner">
 <div class="item active">
-<img data-src="http://placekitten.com/1140/500" src="http://placekitten.com/1140/500" alt="First slide image">
+<img src="http://placehold.it/1140x500" alt="First slide image">
 <div class="carousel-caption">
 <h3>First slide label</h3>
 <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
 </div>
 </div>
 <div class="item">
-<img data-src="http://placekitten.com/1140/500" src="http://placekitten.com/1140/500" alt="Second slide image">
+<img src="http://placehold.it/1140x500" alt="Second slide image">
 <div class="carousel-caption">
 <h3>Second slide label</h3>
 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 </div>
 </div>
 <div class="item">
-<img data-src="http://placekitten.com/1140/500" src="http://placekitten.com/1140/500" alt="Third slide image">
+<img src="http://placehold.it/1140x500" alt="Third slide image">
 <div class="carousel-caption">
 <h3>Third slide label</h3>
 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
