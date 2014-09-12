@@ -21,19 +21,8 @@ module.exports = function(grunt) {
       },
       dist: {
           files: {
-            'styleguide': ['demo']
+            'styleguide': ['styleguide']
           }
-      }
-    },
-
-    imagemin: {
-      all: {
-        files: [{
-          expand: true,
-          cwd: 'img/src',
-          src: ['**/*.{png,jpg,gif}'],
-          dest: 'img/dist/'
-        }]
       }
     },
 
@@ -92,10 +81,6 @@ module.exports = function(grunt) {
         files: ['css/less/*'],
         tasks: ['less:production']
       },
-      imagemin: {
-        files: ['img/src/*'],
-        tasks: ['newer:imagemin:all']
-      },
       static: {
         files: ['index.html']
       },
@@ -126,9 +111,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-connect');
-  grunt.loadNpmTasks('grunt-newer');
-  grunt.loadNpmTasks('grunt-contrib-imagemin');
 
-  grunt.registerTask('default', ['connect', 'newer:imagemin:all', 'watch']);
-  
+  grunt.registerTask('default', ['connect', 'watch']);
+
 }

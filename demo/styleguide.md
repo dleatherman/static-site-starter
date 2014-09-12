@@ -647,7 +647,7 @@
 <div class="row">
 <div class="col-lg-4">
 <div class="thumbnail">
-<img data-src="holder.js/300x200" alt="300x200" src="http://placekitten.com/300/200" style="width: 300px; height: 200px;">
+<img alt="300x200" src="http://placekitten.com/300/200" style="width: 300px; height: 200px;">
 <div class="caption">
 <h3>Thumbnail label</h3>
 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -657,7 +657,7 @@
 </div>
 <div class="col-lg-4">
 <div class="thumbnail">
-<img data-src="holder.js/300x200" alt="300x200" src="http://placekitten.com/300/200" style="width: 300px; height: 200px;">
+<img alt="300x200" src="http://placekitten.com/300/200" style="width: 300px; height: 200px;">
 <div class="caption">
 <h3>Thumbnail label</h3>
 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
@@ -667,7 +667,7 @@
 </div>
 <div class="col-lg-4">
 <div class="thumbnail">
-<img data-src="holder.js/300x200" alt="300x200" src="http://placekitten.com/300/200" style="width: 300px; height: 200px;">
+<img alt="300x200" src="http://placekitten.com/300/200" style="width: 300px; height: 200px;">
 <div class="caption">
 <h3>Thumbnail label</h3>
 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
